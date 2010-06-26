@@ -51,7 +51,8 @@ class Thorgem< Thor::Group
     signatures if options[:signatures]    
     binaries if options[:binaries]
     cucumber if options[:cucumber]
-    rspec if !options[:rspec] 
+    rspec if !options[:rspec]   
+    templates if options[:templates]
     licence if options[:license] 
   end
                                                 
@@ -96,9 +97,12 @@ class Thorgem< Thor::Group
     inside 'lib' do
       template 'app_name.rb', "#{app_name}.thor"
       template 'app_name.rb', "#{app_name}.rb" if !File.exist?("#{app_name}.rb") # if not jewel
-      directory 'templates' if options[:templates]
     end
   end
+  
+  def templates
+    directory 'templates' 
+  end     
 
   def wiki
     empty_directory 'wiki'
