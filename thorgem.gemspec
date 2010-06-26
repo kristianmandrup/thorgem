@@ -41,10 +41,10 @@ Gem::Specification.new do |s|
      "templates/features/app_name.feature",
      "templates/features/support/env.rb",
      "templates/lib/app_name.rb",
-     "templates/lib/templates/my_template.erb",
-     "templates/lib/templates/optional/opt_template.erb",
      "templates/spec/app_name/sample_spec.rb",
      "templates/spec/spec_helper.rb",
+     "templates/templates/my_template.erb",
+     "templates/templates/optional/opt_template.erb",
      "templates/wiki/home.textile",
      "thorgem.gemspec",
      "thortask.gemspec"
