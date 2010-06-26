@@ -95,7 +95,7 @@ class Thorgem< Thor::Group
     empty_directory 'lib'
     inside 'lib' do
       template 'app_name.rb', "#{app_name}.thor"
-      template 'app_name.rb', "#{app_name}.rb"
+      template 'app_name.rb', "#{app_name}.rb" if !File.exist("#{app_name}.rb") # if not jewel
       directory 'templates' if options[:templates]
     end
   end
