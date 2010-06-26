@@ -125,12 +125,11 @@ class Thorgem< Thor::Group
   private
 
   def class_name                                          
-    name = if options[:namespace]
-      "#{options[:namespace]}::#{app_name}"
+    if options[:namespace]
+      "#{options[:namespace].camelize}::#{app_name.camelize}"
     else     
-      app_name
+      app_name.camelize
     end
-    name.camelize
   end
   
   def ns_app_name
