@@ -45,6 +45,8 @@ Gem::Specification.new do |s|
      "templates/lib/templates/optional/opt_template.erb",
      "templates/spec/app_name/sample_spec.rb",
      "templates/spec/spec_helper.rb",
+     "templates/wiki/home.textile",
+     "thorgem.gemspec",
      "thortask.gemspec"
   ]
   s.homepage = %q{http://github.com/kristianmandrup/thortask}
