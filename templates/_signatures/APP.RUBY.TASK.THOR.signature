@@ -1,0 +1,10 @@
+----
+Application:
+  Name: <%= app_name %>
+  Origin: mine
+  Version: 0.1.0
+  Test:
+  <%= "- Cucumber" if !options[:skip_cucumber] %>
+  <%= "- Rspec" if !options[:skip_rspec] %>
+  
+  
